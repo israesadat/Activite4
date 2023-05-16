@@ -1,0 +1,159 @@
+<!DOCTYPE html">
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+    <title>Résume d&#39;des COurs TIC</title>
+  
+     <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <div id="conteneur">    
+    <h1 id="header"><a><span>Resume du Chapitre V<br>Système de Gestion de Version</span></a></h1>
+
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Acceuil</a></li>
+        <li><a href="chapitre1.html">Chapitre n°1</a></li>
+        <li><a href="chapitre2.html">Chapitre n°2</a></li>
+        <li><a href="chapitre3.html">Chapitre n°3</a></li>
+        <li><a href="chapitre4.html">Chapitre n°4</a></li>
+        <li><a href="chapitre5.html">Chapitre n°5</a></li>
+      </ul>
+    </nav>
+    
+	<div id="contenu">
+	<p><h1>Qu'est-ce que Git ?</h1>
+	Git est un logiciel de versioning créé en 2005 par Linus Torvald, le créateur de linux.
+	Logiciel de gestion de version est un logiciel qui permet de conserver un historique des
+	modifications effectuées sur un projet afin de pouvoir rapidement identifier les
+	changements effectues et de revenir à une ancienne version en cas de problème.</p>
+	<p><h1>A quoi sert concrètement un système de gestion de version ?</h1>
+	Git permet de coordonner le travail entre plusieurs personnes en conservant un historique
+	des changements effectues sur des fichiers.
+	Git permet à différentes versions d’un même fichier de coexister. Les développeurs
+	travaillant avec Git ont accès à l’historique des modifications pour l’intégralité du projet et
+	peuvent ainsi savoir quels changements ont été fait par rapport à leur version des fichiers,
+	qui a fait ces changements, ct.</P>
+	<P><h1>Les deux modèles des logiciels de gestion de version :</h1>
+	<h2>Modèle centralise vs modèle décentralisé</h2>
+	<p>Le principe de base d’un modèle centralise est la centralisation du code source lie au projet
+	: la source du code du projet est hébergée sur un serveur distant central et les différents
+	utilisateurs doivent se connecter à ce serveur pour travailler sur ce code.
+	Dans un modèle distribue, le principe de base est opposé : le code source du projet est
+	toujours hébergé sur un serveur distant mais chaque utilisateur est invite à télécharger et à
+	héberger l’intégralité du code source du projet sur sa propre machine.</P>
+	<h1>Qu’est-ce que GitHub ?</h1>
+	<p>Git est un logiciel de gestion de version. Git va nous permettre d’enregistrer les différentes
+	modifications effectuées sur un projet de pouvoir retourner à une version précédente du
+	projet.</P>
+	<h1>Utiliser Git : ligne de commande, console et interface graphique</h1>
+	<P>
+	• utiliser la ligne de commande est le seul moyen d’avoir accès à toutes les
+	commandes Git ;
+	• Toutes les personnes vont avoir accès aux mêmes commandes avec la ligne de
+	commande, ce qui signifie que tout le monde pourra suivre ce cours de la même façon
+	• Si vous savez comment utiliser la version en ligne de commande, vous saurez utiliser
+	n’importe quelle autre interface graphique.</P>
+	<h1>Installation de Git</h1>
+	<p>La façon la plus simple d’installer Git est de télécharger la dernière version sur le site
+	http://git-scm.com/downloads , d’ouvrir le fichier téléchargé et de suivre les instructions à
+	l’écran en laissant toutes les valeurs par défaut.</p>
+	<h1>Paramétrage de Git</h1>
+	<p>Une fois Git installe, nous allons paramétrer le logiciel afin d’enregistrer certaines données
+	pour ne pas avoir à les fournir à nouveau plus tard.
+	Nous allons notamment ici renseigner un nom d’utilisateur et une adresse mail que Git
+	devra utiliser ensuite.
+	Pour faire cela, nous allons utiliser notre première commande Git qui est la commande git
+	config. Cette commande permet de de voir et modifier les variables de configuration qui
+	contrôlent tous les aspects de l’apparence et du comportement de Git.
+	Nous allons également passer une option -- globale à notre commande Les options
+	permettent de personnaliser le comportement par défaut de certaines commandes.
+	Ici, L’adresse mail renseignes doivent être utilises globalement (c’est-à-dire pour tout projet
+	Git).
+	On va donc taper les commandes suivantes : git config -- global user.name “Bouchekir
+	Redouane” git config -- global user.email redouane.bouchekir@gmail.com à la suite
+	pour renseigner un nom et une adresse email. Bien évidemment, utilisez votre propre nom
+	et votre propre adresse email.</p>
+	<h1>Démarrer un dépôt Git</h1>
+	<p>Un “dépôt” correspond à la copie et à l’importation de l’ensemble des fichiers d’un projet
+	dans Git. Il existe deux façons de créer un dépôt Git :
+	• On peut importer un répertoire déjà existant dans Git ;
+	• On peut cloner un dépôt Git déjà existant.</p>
+	
+	<h1>La gestion des informations selon Git</h1>
+	<p>La façon dont Git considère les données est assez différente de la plupart des autres
+	systèmes de gestion de version.
+	Git pense les données à la manière d’un flux d’instantanés ou “snapshots". Grosso modo, à
+	chaque fois qu’on va valider ou enregistrer l’état d’un projet dans Git, il va prendre un
+	instantané du contenu de l’espace de travail à ce moment et va enregistrer une référence à
+	cet instantané pour qu’on puisse y accéder par la suite.
+	Chaque instantané est stocké dans une base de données locale, c’est-à-dire une base de
+	données située sur notre propre machine.</p>
+	<h1>Les états des fichiers</h1>
+	<p>Le document décrit les différents états des fichiers dans Git, un système de contrôle de
+	version pour le développement de logiciels. Les fichiers peuvent être suivis ou non suivis, et
+	les fichiers suivis peuvent avoir différents états tels que modifie, indexe ou valide. Le texte
+	explique également comment Git gère les fichiers lorsqu’il démarre un nouveau référentiel
+	ou clone un référentiel existant.</p>
+	<h1>Les zones de travail, créer un dépôt Git à partir d’un répertoire existant</h1>
+	<p>L'image est un diagramme montrant les trois sections d’un projet Git : l’arborescence de
+	travail, la zone de transfert et le répertoire Git. Il explique également le processus de travail
+	avec des fichiers dans Git, notamment la modification ou la création de fichiers dans
+	l’arborescence de travail, leur indexation dans la zone de transfert et leur validation dans le
+	répertoire Git. Le diagramme montre également les différents états d’un fichier dans Git :
+	non suivi, non modifie, modifie et indexe.
+	Le texte décrit comment créer un dépôt Git à partir d’un répertoire existant sur un
+	ordinateur ou un serveur distant. L'auteur crée un répertoire de projet sur son bureau
+	contenant deux fichiers texte vides, puis utilise la commande ‘git init ‘ pour initialiser le
+	dépôt Git. Le texte comprend également des explications sur les commandes ‘cd’ et ‘dir’
+	utilisées dans la console de commande. L'image montre une capture d'écran d’une console
+	de commande Windows avec un fond noir et une écriture en vert.
+	Le texte sur l'image explique comment utiliser la commande < git statuts > pour déterminer
+	l’état des fichiers dans un répertoire de projet git. La commande < git statuts > informe de
+	la présence de fichiers non suivis (< untracked >) et de l’absence de fichiers valides (<
+	commit >) dans la base de données. Pour indexer des fichiers, on utilise la commande <git
+	add > avec le nom de fichier ou le nom de fichier ou le nom de répertoire. Les fileglobs
+	peuvent être utilisés pour ajouter tous les fichiers correspondants au schéma fourni. Le
+	
+	texte décrit l’utilisation de la commande < git add > pour indexer des fichiers et les ajouter à
+	la base de versionne ment. Ensuite, la commande < git commit > est utilisée pour valider les
+	fichiers et ajouter un message de commit. Le texte explique également l’utilisation de
+	l’éditeur VIM pour ajouter un message de commit. Enfin, le texte montre comment vérifier
+	l’état des fichiers avec la commande < git statuts >.</p>
+	<h1>Cloner un dépôt Git</h1>
+	<p>C’est une page web qui affiche des instructions sur la façon de cloner un dépôt Git existant,
+	avec un fond d’écran en vert et noir visible. Le texte sur l’image fournit des instructions
+	étape par étape sur la création d’un dépôt sur GitHub et le transfert de fichiers vers celui-ci
+	en utilisant des commandes Git.</p>
+	<h1> Cloner un dépôt Git</h1>
+	<p>Le texte décrit comment ajouter, modifier ou supprimer des fichiers dans un projet et
+	actualiser le dépôt Git pour gérer les différentes versions du projet. Il explique également
+	comment Git enregistre l’historique des versions et comment consulter cet historique en
+	utilisant la commande git log. Il met en garde contre le fait que le commit d’un fichier se
+	base sur l’état du fichier au moment du git add , et que pour enregistrer la dernière version
+	d’un fichier , il faut effectuer un git add juste avant un git commit.</p>
+	<h1>Ajouter ou modifier des fichiers dans un projet et actualiser notre dépôt</h1>
+	<p>Git, consulter l’historique des modifications Git
+	Le texte décrit comment ajouter, modifier ou supprimer des fichiers dans un projet et
+	actualiser le dépôt Git pour gérer les différentes versions du projet. Il explique également
+	comment Git enregistre l’historique des versions et comment consulter cet historique en
+	utilisant la commande git log. Il met en garde contre le fait que le commit d’un fichier au
+	moment du git add , et que pour enregistrer la dernière version d’un fichier, il faut effectuer
+	un git add juste avant un git commit.</p>
+	<h1> Annuler des modifications apportées a un fichier, Qu’est-ce qu’une
+	branche ?</h1>
+	<p>Le document décrit l’utilisation de Git pour annuler des modifications apportées à un fichier
+	et la création de branches dans Git pour développer et tester de nouvelles fonctionnalités
+	sans impacter le projet de base. Git à une approche différente des autres systèmes de
+	contrôle de version, ou une branche est simplement un pointeur vers un commit.
+	La branche par défaut dans Git s’appelle < master >, mais on peut la renommer si
+	nécessaire. Créer une nouvelle branche dans Git crée simplement un nouveau pointeur
+	plutôt que de recopier l’intégralité du répertoire de travail.</p>
+	</div>
+    
+   <p id="footer">© 2023 Conception et réalisation par le groupe USTHB. Tous droits réservés.</p>
+  </div>
+  </body>
+</html>
+
+
